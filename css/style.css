@@ -305,10 +305,13 @@ footer .contenedor-social-footer li a:hover {
     "foto1 foto2 foto3"
     "name1 name2 name3";
 }
-
 .contenedor-founders img {
     width: 100%;
     height: 100%;
+}
+.contenedor-founders p{
+    display: flex;
+    justify-content: center;
 }
 .titulo {
     grid-area: titulo;
