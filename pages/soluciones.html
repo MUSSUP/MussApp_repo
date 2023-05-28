@@ -5,39 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MussApp</title>
-  <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+  <title>MussApp | Soluciones</title>
+  <link rel="shortcut icon" href="../img/favicon/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
-  <header>
-    <div class="contenedor-logo-header">
-      <img src="./img/Logo_blanco_transparente.svg" alt="MussApp" width="60" height="60">
+  <header class="header">
+    <div class="contenedor-logo">
+      <a href="../index.html"> <img src="../img/Logo_blanco_transparente.svg" alt="MussApp" width="60" height="60"></a>
     </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/contactanos.html">Contáctanos</a>
+              <a class="nav-link" aria-current="page" href="../pages/contactanos.html">Contáctanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/blog.html">Blog</a>
+              <a class="nav-link" href="../pages/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/planes.html">Planes</a>
+              <a class="nav-link" href="../pages/planes.html">Planes</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -45,7 +45,7 @@
                 Soluciones
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/soluciones.html">Gestión de Ventas</a></li>
+                <li><a class="dropdown-item" href="../pages/soluciones.html">Gestión de Ventas</a></li>
                 <li><a class="dropdown-item" href="#">Inventario</a></li>
                 <li><a class="dropdown-item" href="#">CRM</a></li>
               </ul>
@@ -56,26 +56,54 @@
     </nav>
   </header>
 
-
-
-  <main class="contenedor">
-
-    <div class="contenedor-textos">
-      <h1 class="titulo">Insertá tu negocio en la era digital</h1>
-      <h2 class="subtitulo">Gestioná y controlá tus finanzas</h2>
-      <h2 class="subtitulo">desde cualquier dispositivo </h2>
-      <a href="#" class="cta">Entrar Ahora</a>
-    </div>
-    <div class="contenedor-imagen">
-      <img class="img1" src="./img/img_index_isometric.svg" alt="reporte online">
+  <main>
+    <div>
+      <h1>Algunas funcionalidades de MussApp</h1>
     </div>
 
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/crm.png" class="d-block w-100" alt="orden de tareas">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Organizá</h5>
+            <p>Agendá reuniones y cargá tareas para vos y tu equipo de trabajo!! </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/decisiones.png" class="d-block w-100" alt="reportes para toma de decisiones">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Toma Decisiones</h5>
+            <p>Apoyate en los diferentes reportes para saber si te estas por quedar sin mercadería, para ver qué es lo que más se está vendiendo, o hasta saber si tu negocio está generando  ganancias! </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/ventas.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aumenta tus ventas</h5>
+            <p>Conectá tu base de articulos con otras plataformas de ventas para llegar a mas clientes!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </main>
 
-
   <footer>
-        <div class="contenedor-logo-footer">
-      <img src="./img/Logo_black_transparente.svg" alt="MussApp" width="60" height="60">
+    <div class="contenedor-logo-footer">
+      <img src="../img/Logo_black_transparente.svg" alt="MussApp" width="60" height="60">
     </div>
     <div class="contenedor-social-footer">
       <ul>
@@ -99,11 +127,11 @@
     </div>
     <div class="menu-footer">
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/nosotros.html">Conócenos</a></li>
-        <li><a href="./pages/soluciones.html">Soluciones</a></li>
-        <li><a href="./pages/blog.html">Blog</a></li>
-        <li><a href="./pages/planes.html">Planes</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/nosotros.html">Conócenos</a></li>
+        <li><a href="../pages/soluciones.html">Soluciones</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+        <li><a href="../pages/planes.html">Planes</a></li>
       </ul>
     </div>
     <div class="copy-footer">
@@ -111,19 +139,9 @@
     </div>
 
   </footer>
-
-
-
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
