@@ -1,0 +1,22 @@
+
+@keyframes animacion1 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+
+@keyframes animacionWave {
+    from {
+        background-position: left 0 top 0;
+    }
+
+    to {
+        background-position: left 1000px top 0;
+    }
+}
+

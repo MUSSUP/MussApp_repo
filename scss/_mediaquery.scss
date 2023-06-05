@@ -1,0 +1,430 @@
+//---------------------------------media query TABLET-------------------------------------//
+@media only screen and (max-width: 961px) {
+    .contenedor {
+        flex-direction: column;
+
+        .img1 {
+            height: 450px;
+            width: 350px;
+        }
+
+        .titulo {
+            font-size: 40px;
+        }
+
+        .subtitulo {
+            font-size: 25px;
+        }
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    .titulo1 {
+        font-size: 40px;
+    }
+
+
+    .contenedor-founders {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50px 200px 100px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "historia foto1 foto2 foto3"
+            "historia name1 name2 name3";
+
+        .historia {
+            margin-right: 20px;
+
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+
+
+    .team-01 p {
+        margin-left: 20px;
+        margin-right: 15%;
+        line-height: 30px;
+    }
+
+    .team-02 {
+        width: 250px;
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+.contenedor-planes{
+
+    .img-planes1 {
+        @include planesmedia;
+    }
+
+    .img-planes2 {
+        @include planesmedia;
+    }
+
+    .img-planes3 {
+        @include planesmedia;
+    }
+}
+
+    .titulo-blog h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .contenedor-faq h2 {
+        font-size: 20px;
+    }
+
+    .contenedor-emprendedores h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+}
+
+/*---------------------------------media query MOBILE-------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+
+    footer {
+        margin-top: 10px;
+        height: 110px;
+
+        p {
+            margin: 0;
+        }
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "logo enlaces"
+        "social copy";
+
+        .contenedor-logo-footer {
+            grid-area: logo;
+            justify-self: center;
+        }
+
+        .contenedor-social-footer {
+            grid-area: social;
+        }
+
+        .menu-footer {
+            grid-area: enlaces;
+        }
+
+        .copy-footer {
+            grid-area: copy;
+            justify-self: center;
+        }
+    }
+
+    .contenedor-textos {
+        overflow: hidden;
+        padding-left: 0;
+    }
+
+    .contenedor-team {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "titulo1"
+            "team-02"
+            "team-01";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo1 {
+        grid-area: titulo1;
+        justify-self: center;
+    }
+
+    .team-01 {
+        grid-area: team-01;
+        margin-right: 20px;
+
+        p {
+            line-height: 30px;
+            margin-right: 20px;
+        }
+    }
+
+    .team-02 {
+        grid-area: team-02;
+        justify-self: center;
+        margin-left: 0;
+    }
+
+    .contenedor-founders {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50px 200px 100px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "foto1 foto2 foto3"
+            "name1 name2 name3"
+            "historia historia historia";
+
+        .historia {
+            margin-right: 40px;
+        }
+    }
+
+
+    .img-planes1 {
+        height: 400px;
+        width: 200px;
+    }
+
+
+    .img-planes2 {
+        height: 400px;
+        width: 200px;
+    }
+
+    .img-planes3 {
+        height: 400px;
+        width: 200px;
+    }
+
+    .titulo-planes h1 {
+        font-size: 25px;
+    }
+
+    #carouselExampleCaptions {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin-left: 15%;
+        margin-top: 20px;
+        height: 500px;
+        width: 500px;
+    }
+
+    .accordion-item {
+        background-color: hsla(241, 43%, 79%, 0.363);
+        width: 590px;
+        border-color: hsla(241, 43%, 79%, 0.363);
+
+        .accordion-button {
+            background: none;
+            width: 590px;
+        }
+    }
+
+}
+
+/*---------------------------------media query MIN-------------------------------------*/
+@media only screen and (max-width: 600px) {
+    body {
+        background: $colorprincipal;
+
+        .titulo {
+            font-size: 30px;
+        }
+
+        .subtitulo {
+            font-size: 20px;
+        }
+
+        .cta {
+            height: 40px;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .contenedor-textos {
+            padding-left: 40px;
+        }
+
+        .contenedor-imagen {
+            overflow: hidden;
+
+            img {
+                height: 450px;
+                width: 350px;
+            }
+        }
+
+    }
+
+    header {
+        img {
+            margin-left: 20px;
+        }
+    }
+
+    footer {
+        margin-top: 10px;
+        height: 110px;
+
+        p {
+            margin: 0;
+        }
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "logo enlaces"
+        "social copy";
+
+        .contenedor-logo-footer {
+            grid-area: logo;
+            justify-self: center;
+        }
+
+        .contenedor-social-footer {
+            grid-area: social;
+        }
+
+        .menu-footer {
+            grid-area: enlaces;
+        }
+
+        .copy-footer {
+            grid-area: copy;
+            justify-self: center;
+        }
+    }
+
+
+    .contenedor-founders {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 50px 130px 130px 130px 200px;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+            "titulo titulo"
+            "foto1 name1"
+            "foto2 name2"
+            "foto3 name3"
+            "historia historia";
+
+        .historia {
+            p {
+                line-height: 25px;
+                margin: 10px;
+            }
+
+            a {
+                padding: 5px;
+
+            }
+        }
+
+
+        img {
+            width: 130px;
+            height: 130px;
+            margin-right: 0px;
+        }
+        .grid-item {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+
+    .contenedor-team {
+
+        img {
+            width: 250px;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+        .team-01 {
+            margin: 0px;
+
+            p {
+                margin: 10px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .contenedor-planes {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "titulo2"
+            "plan1"
+            "plan2"
+            "plan3";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-planes1 {
+        height: 400px;
+        width: 200px;
+        justify-self: center;
+    }
+
+    .img-planes2 {
+        height: 400px;
+        width: 200px;
+        justify-self: center;
+    }
+
+    .img-planes3 {
+        height: 400px;
+        width: 200px;
+        justify-self: center;
+    }
+
+    #carouselExampleCaptions {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+
+        margin-top: 20px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .accordion-item {
+        background-color: hsla(241, 43%, 79%, 0.363);
+        width: 300px;
+        border-color: hsla(241, 43%, 79%, 0.363);
+
+        .accordion-button {
+            background: none;
+            width: 300px;
+        }
+    }
+
+    .notas-emprendedores {
+        @include flex (none, center, column, none, wrap);
+
+        .card {
+            align-self: center;
+        }
+    }
+
+
+   
+}

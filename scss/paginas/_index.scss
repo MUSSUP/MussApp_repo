@@ -1,0 +1,38 @@
+.contenedor {
+    @include flex (center, space-around, row, center, wrap);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contenedor-textos {
+    flex-basis: 50%;
+    padding-left: 40px;
+
+    h1 {
+        @extend .titulo;
+    }
+
+    h2 {
+        @extend .subtitulo;
+    }
+
+    a {
+        @include cta;
+    }
+
+    a:hover {
+        background-color: #eb8196;
+    }
+
+}
+
+.contenedor-imagen {
+    flex-basis: 50%;
+    position: relative;
+    text-align: center;
+
+    img {
+        @extend .img1;
+    }
+}

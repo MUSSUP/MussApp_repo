@@ -1,0 +1,108 @@
+.contenedor-team {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "titulo1 titulo1"
+        "team-02 team-01";
+    justify-content: space-evenly;
+    align-items: center;
+
+    .titulo1 {
+        grid-area: titulo1;
+        justify-self: center;
+    }
+
+    .team-01 {
+        grid-area: team-01;
+
+        p {
+            text-align: justify;
+            line-height: 40px;
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+    }
+
+    .team-02 {
+        grid-area: team-02;
+        margin-left: 40px;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+}
+
+
+.contenedor-founders {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px 200px 100px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "historia foto1 foto2 foto3"
+        "historia name1 name2 name3";
+
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo {
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .historia {
+        grid-area: historia;
+        margin-left: 40px;
+        margin-right: 60px;
+
+        p {
+            text-align: justify;
+            line-height: 40px;
+        }
+
+        a {
+            @include cta;
+            width: 280px;
+        }
+    }
+
+
+    .grid-item uno {
+        grid-area: foto1;
+    }
+
+    .grid-item dos {
+        grid-area: foto2;
+    }
+
+    .grid-item tres {
+        grid-area: foto3;
+    }
+
+    .names1 {
+        grid-area: name1;
+    }
+
+    .names2 {
+        grid-area: name2;
+    }
+
+    .names3 {
+        grid-area: name3;
+    }
+}

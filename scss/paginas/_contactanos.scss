@@ -1,0 +1,20 @@
+.contenedor-contactanos {
+    @include flex (center, center, column, center, wrap);
+
+    .ipform_1 {
+        @include input;
+        height: 25px;
+        width: 300px;
+    }
+
+    .ipform_2 {
+        @include input;
+        height: 100px;
+        width: 300px;
+    }
+
+    #button_form01 {
+        @include cta;
+        border: 0;
+    }
+}

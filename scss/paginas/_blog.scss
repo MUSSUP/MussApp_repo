@@ -1,0 +1,38 @@
+.titulo-blog {
+    @include flex (center, center, row, center, wrap);
+    h1 {
+        @extend .titulo;
+    }
+}
+
+
+.notas-emprendedores {
+    @include flex (none, space-around, row, none, wrap);
+}
+.contenedor-emprendedores h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.card{
+    background-color: hsla(241, 43%, 79%, 0.363);
+    border-color: hsla(241, 43%, 79%, 0.363);
+    color: white;
+    a{
+        @include cta;
+    }
+}
+.contenedor-faq{
+    @include flex (center, center, column, none, wrap);
+}
+.accordion-item{
+    color: white;
+    background-color: hsla(241, 43%, 79%, 0.363);
+    width: 800px; 
+    border-color: hsla(241, 43%, 79%, 0.363);
+    .accordion-button{
+        background: none;
+        width: 800px;
+        color: white;
+    }
+}

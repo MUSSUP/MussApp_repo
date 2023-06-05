@@ -1,0 +1,39 @@
+@mixin flex ($align, $justify, $direction, $items, $wrap) {
+    display: flex;
+    align-content: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $items;
+    flex-wrap: $wrap;
+}
+
+@mixin cta {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: $colorsecundario;
+    text-decoration: none;
+    color: white;
+    text-justify: auto;
+}
+
+@mixin input {
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    background-color: rgba(248, 244, 244, 0.5);
+}
+
+@mixin planes {
+    height: 500px;
+    width: 300px;
+    background-color: rgba(177, 177, 177, 0.6);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+@mixin planesmedia{
+    height: 400px;
+    width: 200px;
+}
