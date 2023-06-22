@@ -13,11 +13,22 @@ Tiene relación con los colores de la aplicación, manteniendo un formato minima
 Me mantuve siempre cercana a mi primer sketch, con el diagram de info que quería mostrar más importante:
 
 
-![App Screenshot](./img/MussApp_Sketch_Index.jpeg/) 
+! [Sketch MussApp pages](/img/MussApp_Sketch_Index.jpeg) 
     
 En el wireframe amplié un poco con el contenido... y pretendo retomar el mismo en mis proximos cursos... 
 
-<img src="./img/MussApp_Wireframe.png" alt="MussApp Wireframe" width="60" height="60">
+! [Wireframe MussApp pages](/img/MussApp_Wireframe.png) 
+
+## Lenguajes y Tecnologías
+Html y Css
+Frameworks: Sass, Mode.js, Bootstrap. 
+Sistema de control de versiones: Git y GitHub
+
+## Links:
+https://mussup.github.io/MussApp_repo/
+http://mussapp.great-site.net/
+
+
     
 
 

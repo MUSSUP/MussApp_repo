@@ -2,19 +2,22 @@
 @media only screen and (max-width: 961px) {
     .contenedor {
         flex-direction: column;
+        padding: 20px;
 
         .img1 {
             height: 450px;
-            width: 350px;
+            width: 450px;
         }
 
         .titulo {
             font-size: 40px;
+            width: 80%;
         }
 
         .subtitulo {
             font-size: 25px;
         }
+
     }
 
     footer {
@@ -28,10 +31,11 @@
 
     .contenedor-founders {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 450px 150px 150px 150px;
         grid-template-rows: 50px 200px 100px;
         justify-content: center;
         align-content: center;
+        margin-right: 20px;
         grid-template-areas:
             "titulo titulo titulo titulo"
             "historia foto1 foto2 foto3"
@@ -42,6 +46,8 @@
 
             p {
                 line-height: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
             }
         }
     }
@@ -63,20 +69,20 @@
         }
     }
 
-.contenedor-planes{
+    .contenedor-planes {
 
-    .img-planes1 {
-        @include planesmedia;
-    }
+        .img-planes1 {
+            @include planesmedia;
+        }
 
-    .img-planes2 {
-        @include planesmedia;
-    }
+        .img-planes2 {
+            @include planesmedia;
+        }
 
-    .img-planes3 {
-        @include planesmedia;
+        .img-planes3 {
+            @include planesmedia;
+        }
     }
-}
 
     .titulo-blog h1 {
         display: flex;
@@ -141,7 +147,7 @@
 
     .contenedor-team {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 600px;
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "titulo1"
@@ -158,11 +164,9 @@
 
     .team-01 {
         grid-area: team-01;
-        margin-right: 20px;
 
         p {
             line-height: 30px;
-            margin-right: 20px;
         }
     }
 
@@ -174,7 +178,7 @@
 
     .contenedor-founders {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 200px 200px 200px;
         grid-template-rows: 50px 200px 100px;
         justify-content: center;
         align-content: center;
@@ -217,7 +221,7 @@
         margin-left: 15%;
         margin-top: 20px;
         height: 500px;
-        width: 500px;
+        width: 300px;
     }
 
     .accordion-item {
@@ -236,8 +240,6 @@
 /*---------------------------------media query MIN-------------------------------------*/
 @media only screen and (max-width: 600px) {
     body {
-        background: $colorprincipal;
-
         .titulo {
             font-size: 30px;
         }
@@ -252,15 +254,21 @@
             padding: 5px 0;
         }
 
+        .contenedor {
+            padding: 0;
+        }
+
         .contenedor-textos {
             padding-left: 40px;
         }
 
         .contenedor-imagen {
             overflow: hidden;
+            height: 350;
+            width: 350;
 
-            img {
-                height: 450px;
+            .img1 {
+                height: 350px;
                 width: 350px;
             }
         }
@@ -275,7 +283,7 @@
 
     footer {
         margin-top: 10px;
-        height: 110px;
+        height: 150px;
 
         p {
             margin: 0;
@@ -311,8 +319,8 @@
 
     .contenedor-founders {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 50px 130px 130px 130px 200px;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 50px 130px 130px 130px 300px;
         justify-content: center;
         align-items: center;
         grid-template-areas:
@@ -340,6 +348,7 @@
             height: 130px;
             margin-right: 0px;
         }
+
         .grid-item {
             display: flex;
             justify-content: flex-end;
@@ -348,18 +357,24 @@
 
 
     .contenedor-team {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "titulo1"
+            "team-02"
+            "team-01";
+        justify-content: center;
+        align-items: center;
 
         img {
-            width: 250px;
-            height: 200px;
+            width: 200px;
+            height: 150px;
             border-radius: 20px;
         }
 
         .team-01 {
-            margin: 0px;
-
             p {
-                margin: 10px;
                 line-height: 25px;
             }
         }
@@ -426,5 +441,5 @@
     }
 
 
-   
+
 }

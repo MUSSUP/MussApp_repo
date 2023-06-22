@@ -11,10 +11,14 @@ body {
   min-height: 100vh;
   color: white;
   font-family: "Quicksand", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .titulo, .titulo-blog h1, .contenedor-textos h1 {
   font-size: 50px;
+  display: flex;
 }
 
 .subtitulo, .contenedor-textos h2 {
@@ -77,7 +81,7 @@ header .custom-toggler .navbar-toggler-icon {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   z-index: 1;
 }
@@ -121,6 +125,7 @@ header .custom-toggler .navbar-toggler-icon {
   flex-direction: row;
   align-items: none;
   flex-wrap: wrap;
+  margin-bottom: 200px;
 }
 
 .contenedor-emprendedores h2 {
@@ -206,7 +211,7 @@ header .custom-toggler .navbar-toggler-icon {
 
 .contenedor-team {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 250px 600px;
   grid-template-rows: auto auto;
   grid-template-areas: "titulo1 titulo1" "team-02 team-01";
   justify-content: space-evenly;
@@ -222,25 +227,24 @@ header .custom-toggler .navbar-toggler-icon {
 .contenedor-team .team-01 p {
   text-align: justify;
   line-height: 40px;
-  margin-left: 60px;
-  margin-right: 40px;
+  margin-right: 80px;
 }
 .contenedor-team .team-02 {
   grid-area: team-02;
-  margin-left: 40px;
 }
 .contenedor-team img {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   border-radius: 20px;
 }
 
 .contenedor-founders {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 500px 150px 150px 150px;
   grid-template-rows: 50px 200px 100px;
   justify-content: center;
   align-content: center;
+  margin-right: 20px;
   grid-template-areas: "titulo titulo titulo titulo" "historia foto1 foto2 foto3" "historia name1 name2 name3";
 }
 .contenedor-founders img {
@@ -257,8 +261,6 @@ header .custom-toggler .navbar-toggler-icon {
 }
 .contenedor-founders .historia {
   grid-area: historia;
-  margin-left: 40px;
-  margin-right: 60px;
 }
 .contenedor-founders .historia p {
   text-align: justify;
@@ -348,7 +350,8 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   max-height: 200px;
   color: black;
@@ -417,13 +420,15 @@ footer .contenedor-social-footer li a:hover {
 @media only screen and (max-width: 961px) {
   .contenedor {
     flex-direction: column;
+    padding: 20px;
   }
   .contenedor .img1, .contenedor .contenedor-imagen img, .contenedor-imagen .contenedor img {
     height: 450px;
-    width: 350px;
+    width: 450px;
   }
   .contenedor .titulo, .contenedor .contenedor-textos h1, .contenedor-textos .contenedor h1, .contenedor .titulo-blog h1, .titulo-blog .contenedor h1 {
     font-size: 40px;
+    width: 80%;
   }
   .contenedor .subtitulo, .contenedor .contenedor-textos h2, .contenedor-textos .contenedor h2 {
     font-size: 25px;
@@ -436,10 +441,11 @@ footer .contenedor-social-footer li a:hover {
   }
   .contenedor-founders {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 450px 150px 150px 150px;
     grid-template-rows: 50px 200px 100px;
     justify-content: center;
     align-content: center;
+    margin-right: 20px;
     grid-template-areas: "titulo titulo titulo titulo" "historia foto1 foto2 foto3" "historia name1 name2 name3";
   }
   .contenedor-founders .historia {
@@ -447,6 +453,8 @@ footer .contenedor-social-footer li a:hover {
   }
   .contenedor-founders .historia p {
     line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .team-01 p {
     margin-left: 20px;
@@ -522,7 +530,7 @@ footer .contenedor-social-footer li a:hover {
   }
   .contenedor-team {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 600px;
     grid-template-rows: auto auto auto;
     grid-template-areas: "titulo1" "team-02" "team-01";
     justify-content: center;
@@ -534,11 +542,9 @@ footer .contenedor-social-footer li a:hover {
   }
   .team-01 {
     grid-area: team-01;
-    margin-right: 20px;
   }
   .team-01 p {
     line-height: 30px;
-    margin-right: 20px;
   }
   .team-02 {
     grid-area: team-02;
@@ -547,7 +553,7 @@ footer .contenedor-social-footer li a:hover {
   }
   .contenedor-founders {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 200px 200px 200px;
     grid-template-rows: 50px 200px 100px;
     justify-content: center;
     align-content: center;
@@ -578,7 +584,7 @@ footer .contenedor-social-footer li a:hover {
     margin-left: 15%;
     margin-top: 20px;
     height: 500px;
-    width: 500px;
+    width: 300px;
   }
   .accordion-item {
     background-color: hsla(241, 43%, 79%, 0.363);
@@ -592,9 +598,6 @@ footer .contenedor-social-footer li a:hover {
 }
 /*---------------------------------media query MIN-------------------------------------*/
 @media only screen and (max-width: 600px) {
-  body {
-    background: #5F5CE7;
-  }
   body .titulo, body .contenedor-textos h1, .contenedor-textos body h1, body .titulo-blog h1, .titulo-blog body h1 {
     font-size: 30px;
   }
@@ -606,14 +609,19 @@ footer .contenedor-social-footer li a:hover {
     text-align: center;
     padding: 5px 0;
   }
+  body .contenedor {
+    padding: 0;
+  }
   body .contenedor-textos {
     padding-left: 40px;
   }
   body .contenedor-imagen {
     overflow: hidden;
+    height: 350;
+    width: 350;
   }
-  body .contenedor-imagen img {
-    height: 450px;
+  body .contenedor-imagen .img1, body .contenedor-imagen img {
+    height: 350px;
     width: 350px;
   }
   header img {
@@ -621,7 +629,7 @@ footer .contenedor-social-footer li a:hover {
   }
   footer {
     margin-top: 10px;
-    height: 110px;
+    height: 150px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -648,8 +656,8 @@ footer .contenedor-social-footer li a:hover {
   }
   .contenedor-founders {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50px 130px 130px 130px 200px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 130px 130px 130px 300px;
     justify-content: center;
     align-items: center;
     grid-template-areas: "titulo titulo" "foto1 name1" "foto2 name2" "foto3 name3" "historia historia";
@@ -670,16 +678,20 @@ footer .contenedor-social-footer li a:hover {
     display: flex;
     justify-content: flex-end;
   }
+  .contenedor-team {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo1" "team-02" "team-01";
+    justify-content: center;
+    align-items: center;
+  }
   .contenedor-team img {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     border-radius: 20px;
   }
-  .contenedor-team .team-01 {
-    margin: 0px;
-  }
   .contenedor-team .team-01 p {
-    margin: 10px;
     line-height: 25px;
   }
   .contenedor-planes {

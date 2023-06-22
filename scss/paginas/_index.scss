@@ -1,6 +1,6 @@
 .contenedor {
     @include flex (center, space-around, row, center, wrap);
-    position: relative;
+    position: fixed;
     overflow: hidden;
     z-index: 1;
 }

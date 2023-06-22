@@ -1,6 +1,6 @@
 .contenedor-team {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 250px 600px;
     grid-template-rows: auto auto;
     grid-template-areas:
         "titulo1 titulo1"
@@ -19,19 +19,17 @@
         p {
             text-align: justify;
             line-height: 40px;
-            margin-left: 60px;
-            margin-right: 40px;
+            margin-right: 80px;
         }
     }
 
     .team-02 {
         grid-area: team-02;
-        margin-left: 40px;
     }
 
     img {
-        width: 350px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
         border-radius: 20px;
     }
 
@@ -40,10 +38,11 @@
 
 .contenedor-founders {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 500px 150px 150px 150px;
     grid-template-rows: 50px 200px 100px;
     justify-content: center;
     align-content: center;
+    margin-right: 20px;
     grid-template-areas:
         "titulo titulo titulo titulo"
         "historia foto1 foto2 foto3"
@@ -67,8 +66,7 @@
 
     .historia {
         grid-area: historia;
-        margin-left: 40px;
-        margin-right: 60px;
+       
 
         p {
             text-align: justify;

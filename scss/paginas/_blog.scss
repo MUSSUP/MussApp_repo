@@ -8,6 +8,8 @@
 
 .notas-emprendedores {
     @include flex (none, space-around, row, none, wrap);
+    margin-bottom: 200px;
+
 }
 .contenedor-emprendedores h2 {
     display: flex;
@@ -35,4 +37,6 @@
         width: 800px;
         color: white;
     }
+
 }
+
