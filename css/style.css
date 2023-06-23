@@ -245,6 +245,7 @@ header .custom-toggler .navbar-toggler-icon {
   justify-content: center;
   align-content: center;
   margin-right: 20px;
+  margin-bottom: 150px;
   grid-template-areas: "titulo titulo titulo titulo" "historia foto1 foto2 foto3" "historia name1 name2 name3";
 }
 .contenedor-founders img {
